@@ -41,8 +41,8 @@ const Navbar = () => {
               WebkitTextFillColor: 'transparent',
             }}
           >
-            Product Store 🛒
-          </Typography>
+            <Link to={"/"}>Product Store 🛒</Link>        
+             </Typography>
 
           <Stack direction="row" spacing={3} alignItems="center">
             <Link to="/create">
@@ -51,7 +51,6 @@ const Navbar = () => {
               </Button>
             </Link>
 
-            {/* Color mode toggle button */}
             <Button onClick={toggleColorMode}>
               {colorMode === 'light' ? '🌙' : '🌞'}
             </Button>
